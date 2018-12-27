@@ -12,3 +12,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.main {
+	position:relative;
+	line-height:1.5em;
+	font-size:16px;
+	padding:1px;
+	margin:1px;
+	text-align:center;
+
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-title{
+	border:1px white solid;
+}
+
+.roll-button {
+	border: 1px gray solid;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 5px;
+	box-shadow: 1px 4px black;
+	width:100px;
+	text-align:center;	
+	margin-top: 6px;
+	margin-bottom:20px;
+	box-sizing: border-box;
+	position:relative;	
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.roll-button:hover {
+	cursor:pointer;
+}
+
+.roll-button:active {
+  box-shadow: 0px 2px black;
+  margin-top: 8px;
+  margin-bottom:18px;
+}
