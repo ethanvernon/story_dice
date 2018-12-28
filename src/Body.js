@@ -134,12 +134,15 @@ export class Body extends Component {
 				      	"http://www.fromgaming.com/images/dice/cube18/side4.png", 
 				      	"http://www.fromgaming.com/images/dice/cube18/side5.png", 
 				      	"http://www.fromgaming.com/images/dice/cube18/side6.png"],
-			roll: 		[]
+			roll: 		[],
+			imagesLoading: true
 	    };
 	    
 	   this.chooseDice = this.chooseDice.bind(this);
 	   this.rollDice = this.rollDice.bind(this);
 	   this.assignPng = this.assignPng.bind(this);
+	   this.handleLoadChange = this.handleLoadChange.bind(this);
+	   this.imagesLoaded = this.imagesLoaded.bind(this);
 	}	
 
 	//Chooses 3 of the 9 die
@@ -185,6 +188,43 @@ export class Body extends Component {
 		});
 	}
 
+	//shows loading dialogue when images are still loading
+	renderSpinner() {
+		if (!this.state.imagesLoading) {
+			//render nothing when images are finished
+			return null;
+		}
+		return (
+			<div>
+				<p>Dice are loading...</p>
+			</div>
+		);
+	}
+
+	//responds to each loaded image
+	//sets loading to false if imagesLoaded() returns true
+	handleLoadChange() {
+		this.setState({
+			imagesLoading: !this.imagesLoaded(document.getElementById("image-container"))
+		});
+	}
+
+	//search .image-container children for complete property
+	//returns true when all img element children return true for .complete
+	imagesLoaded(parentNode) {
+		let imgElements = parentNode.querySelectorAll("img");
+		
+		for (let img of imgElements) {
+			if (!img.complete) {
+				return false
+			}
+		}		
+
+		return true;
+	}
+
+
+
 	render() {
 		let allImages=this.state.diceOne.concat(this.state.diceTwo, this.state.diceThree, this.state.diceFour, this.state.diceFive, 
 			this.state.diceSix, this.state.diceSeven, this.state.diceEight, this.state.diceNine, this.state.diceTen, this.state.diceEleven,
@@ -193,11 +233,20 @@ export class Body extends Component {
 		return (
 			<div>
 				<Preload 
-					images={allImages}/>
-				<Roll 
-					onClick={this.chooseDice}/>
-				<RollResult
-					rolls={this.state.roll}/>
+					images={allImages}
+					handleLoad={this.handleLoadChange}/>
+
+				{this.renderSpinner()}
+
+				{!this.state.imagesLoading &&
+					<div>
+						<Roll 
+							onClick={this.chooseDice}/>
+						<RollResult
+							rolls={this.state.roll}/>
+					</div>
+				}
+				
 			</div>
 		)
 	}
