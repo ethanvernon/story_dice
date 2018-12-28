@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/story_dice/static/js/runtime~main.029dc29f.js"
   },
   {
-    "revision": "f2f3c0b9fcc850d94557",
-    "url": "/story_dice/static/js/main.f2f3c0b9.chunk.js"
+    "revision": "dd4b283429b6eb822feb",
+    "url": "/story_dice/static/js/main.dd4b2834.chunk.js"
   },
   {
     "revision": "fbfa9ac1c04d6f818c50",
     "url": "/story_dice/static/js/1.fbfa9ac1.chunk.js"
   },
   {
-    "revision": "f2f3c0b9fcc850d94557",
-    "url": "/story_dice/static/css/main.22f4dd92.chunk.css"
+    "revision": "dd4b283429b6eb822feb",
+    "url": "/story_dice/static/css/main.97261e5e.chunk.css"
   },
   {
-    "revision": "8fcbbd07fd3af9ddd957dbf051501474",
+    "revision": "d880fdbd340750b0b76c006f459d1e68",
     "url": "/story_dice/index.html"
   }
 ];
