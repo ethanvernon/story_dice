@@ -28,6 +28,12 @@ code {
 	justify-content: center;
 }
 
+.dice{	
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
 .main-title{
 	border:1px white solid;
 }
@@ -47,6 +53,7 @@ code {
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .roll-button:hover {

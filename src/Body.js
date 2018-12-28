@@ -71,65 +71,78 @@ export class Body extends Component {
 				      	"http://www.fromgaming.com/images/dice/cube9/side4.png", 
 				      	"http://www.fromgaming.com/images/dice/cube9/side5.png", 
 				      	"http://www.fromgaming.com/images/dice/cube9/side6.png"],
-			rollOne: 	[],
-			rollTwo: 	[],
-			rollThree: 	[],
-			rollFour: 	[], 
+
+	      	diceTen: 	["http://www.fromgaming.com/images/dice/cube10/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube10/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube10/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube10/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube10/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube10/side6.png"],
+
+	      	diceEleven: ["http://www.fromgaming.com/images/dice/cube11/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube11/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube11/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube11/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube11/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube11/side6.png"],
+
+	      	diceTwelve: 	["http://www.fromgaming.com/images/dice/cube12/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube12/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube12/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube12/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube12/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube12/side6.png"],
+
+	      	diceThirteen: 	["http://www.fromgaming.com/images/dice/cube13/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube13/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube13/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube13/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube13/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube13/side6.png"],
+
+	      	diceFourteen: 	["http://www.fromgaming.com/images/dice/cube14/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube14/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube14/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube14/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube14/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube14/side6.png"],
+
+	      	diceFifteen: 	["http://www.fromgaming.com/images/dice/cube15/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube15/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube15/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube15/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube15/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube15/side6.png"],
+
+	      	diceSixteen: 	["http://www.fromgaming.com/images/dice/cube16/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube16/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube16/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube16/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube16/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube16/side6.png"],
+
+	      	diceSeventeen: 	["http://www.fromgaming.com/images/dice/cube17/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube17/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube17/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube17/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube17/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube17/side6.png"],
+
+	      	diceEighteen: 	["http://www.fromgaming.com/images/dice/cube18/side1.png", 
+				      	"http://www.fromgaming.com/images/dice/cube18/side2.png", 
+				      	"http://www.fromgaming.com/images/dice/cube18/side3.png", 
+				      	"http://www.fromgaming.com/images/dice/cube18/side4.png", 
+				      	"http://www.fromgaming.com/images/dice/cube18/side5.png", 
+				      	"http://www.fromgaming.com/images/dice/cube18/side6.png"],
+			roll: 		[]
 	    };
 	    
 	   this.chooseDice = this.chooseDice.bind(this);
 	   this.rollDice = this.rollDice.bind(this);
 	   this.assignPng = this.assignPng.bind(this);
-	}
+	}	
 
-	//preload images...don't know if this works
-	componentWillMount() {
-	    this.state.diceOne.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-
-	    this.state.diceTwo.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceThree.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceFour.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceFive.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceSix.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceSeven.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceEight.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	    
-	    this.state.diceNine.forEach((picture) => {
-	        const img = new Image();
-	        img.src = picture.fileName;
-	    });
-	}
-
+	//Chooses 3 of the 9 die
 	chooseDice() {
 		let dice1=[0];
 		let dice2=[0];
@@ -138,15 +151,16 @@ export class Body extends Component {
 		//rolls for 3 random dice, no two the same
 		while (dice1[0]===dice2[0] || dice2[0]===dice3[0] || dice3[0]===dice1[0]) {
 			console.log("i was rolled");
-			dice1[0] = Math.floor((Math.random()*9)+1);
-			dice2[0] = Math.floor((Math.random()*9)+1);
-			dice3[0] = Math.floor((Math.random()*9)+1);
+			dice1[0] = Math.floor((Math.random()*18)+1);
+			dice2[0] = Math.floor((Math.random()*18)+1);
+			dice3[0] = Math.floor((Math.random()*18)+1);
 		}
 
 		console.log(dice1,dice2,dice3);
 		this.rollDice(dice1, dice2, dice3);		
 	}
 
+	//rolls each die
 	rollDice(dice1, dice2, dice3) {
 		dice1.push(Math.floor((Math.random()*6)+1));
 		dice2.push(Math.floor((Math.random()*6)+1));
@@ -156,8 +170,10 @@ export class Body extends Component {
 		this.assignPng(dice1, dice2, dice3);
 	}
 
+	//makes array with .png for each roll on relevant dice
 	assignPng(dice1,dice2,dice3) {
-		let keys = ["diceOne","diceTwo","diceThree","diceFour","diceFive","diceSix","diceSeven","diceEight","diceNine"];
+		let keys = ["diceOne","diceTwo","diceThree","diceFour","diceFive","diceSix","diceSeven","diceEight","diceNine",
+			"diceTen", "diceEleven","diceTwelve","diceThirteen","diceFourteen","diceFifteen","diceSixteen","diceSeventeen","diceEighteen"];
 		
 		//gets the url for each relevant dice
 		let png1 = this.state[keys[dice1[0]-1]][dice1[1]-1];
@@ -165,14 +181,14 @@ export class Body extends Component {
 		let png3 = this.state[keys[dice3[0]-1]][dice3[1]-1];		
 
 		this.setState({
-			rollOne: [png1, png2, png3]
+			roll: [png1, png2, png3]
 		});
 	}
 
-
 	render() {
 		let allImages=this.state.diceOne.concat(this.state.diceTwo, this.state.diceThree, this.state.diceFour, this.state.diceFive, 
-			this.state.diceSix, this.state.diceSeven, this.state.diceEight, this.state.diceNine);
+			this.state.diceSix, this.state.diceSeven, this.state.diceEight, this.state.diceNine, this.state.diceTen, this.state.diceEleven,
+			this.state.diceTwelve,this.state.diceThirteen,this.state.diceFourteen,this.state.diceFifteen,this.state.diceSixteen,this.state.diceSeventeen,this.state.diceEighteen);
 
 		return (
 			<div>
@@ -181,7 +197,7 @@ export class Body extends Component {
 				<Roll 
 					onClick={this.chooseDice}/>
 				<RollResult
-					rolls={this.state.rollOne}/>
+					rolls={this.state.roll}/>
 			</div>
 		)
 	}

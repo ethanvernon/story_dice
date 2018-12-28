@@ -4,6 +4,7 @@ export class Roll extends Component {
 	constructor(props) {
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
+		this.handleSelect = this.handleSelect.bind(this);
 	}
 
 	//rolls dice on load
@@ -16,9 +17,14 @@ export class Roll extends Component {
 		this.props.onClick();
 	}
 
+	//prevent highlight
+	handleSelect() {
+		return false;
+	}
+
 	render() {
 		return(
-			<div className='roll-button' onTouchStart="" onClick={this.handleClick}>
+			<div className='roll-button' onTouchStart="" onClick={this.handleClick} onSelectStart={this.handleSelect} alt="">
 				Roll
 			</div>
 		)
