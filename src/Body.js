@@ -135,7 +135,8 @@ export class Body extends Component {
 				      	"http://www.fromgaming.com/images/dice/cube18/side5.png", 
 				      	"http://www.fromgaming.com/images/dice/cube18/side6.png"],
 			roll: 		[],
-			imagesLoading: true
+			imagesLoading: true,
+			count: 0
 	    };
 	    
 	   this.chooseDice = this.chooseDice.bind(this);
@@ -196,7 +197,7 @@ export class Body extends Component {
 		}
 		return (
 			<div>
-				<p>Dice are loading...</p>
+				<p>Dice are loading ({this.state.count}/108)...</p>
 			</div>
 		);
 	}
@@ -204,8 +205,11 @@ export class Body extends Component {
 	//responds to each loaded image
 	//sets loading to false if imagesLoaded() returns true
 	handleLoadChange() {
+		let count = this.state.count;
+		count++;
 		this.setState({
-			imagesLoading: !this.imagesLoaded(document.getElementById("image-container"))
+			imagesLoading: !this.imagesLoaded(document.getElementById("image-container")),
+			count: count
 		});
 	}
 
