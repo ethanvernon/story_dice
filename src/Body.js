@@ -9,165 +9,165 @@ export class Body extends Component {
 
     this.state = {
       diceOne: [
-        "../public/dice/cube1/side1.png",
-        "http://www.fromgaming.com/images/dice/cube1/side2.png",
-        "http://www.fromgaming.com/images/dice/cube1/side3.png",
-        "http://www.fromgaming.com/images/dice/cube1/side4.png",
-        "http://www.fromgaming.com/images/dice/cube1/side5.png",
-        "http://www.fromgaming.com/images/dice/cube1/side6.png",
+        "./dice/cube1/side1.png",
+        "./dice/cube1/side2.png",
+        "./dice/cube1/side3.png",
+        "./dice/cube1/side4.png",
+        "./dice/cube1/side5.png",
+        "./dice/cube1/side6.png",
       ],
 
       diceTwo: [
-        "http://www.fromgaming.com/images/dice/cube2/side1.png",
-        "http://www.fromgaming.com/images/dice/cube2/side2.png",
-        "http://www.fromgaming.com/images/dice/cube2/side3.png",
-        "http://www.fromgaming.com/images/dice/cube2/side4.png",
-        "http://www.fromgaming.com/images/dice/cube2/side5.png",
-        "http://www.fromgaming.com/images/dice/cube2/side6.png",
+        "./dice/cube2/side1.png",
+        "./dice/cube2/side2.png",
+        "./dice/cube2/side3.png",
+        "./dice/cube2/side4.png",
+        "./dice/cube2/side5.png",
+        "./dice/cube2/side6.png",
       ],
 
       diceThree: [
-        "http://www.fromgaming.com/images/dice/cube3/side1.png",
-        "http://www.fromgaming.com/images/dice/cube3/side2.png",
-        "http://www.fromgaming.com/images/dice/cube3/side3.png",
-        "http://www.fromgaming.com/images/dice/cube3/side4.png",
-        "http://www.fromgaming.com/images/dice/cube3/side5.png",
-        "http://www.fromgaming.com/images/dice/cube3/side6.png",
+        "./dice/cube3/side1.png",
+        "./dice/cube3/side2.png",
+        "./dice/cube3/side3.png",
+        "./dice/cube3/side4.png",
+        "./dice/cube3/side5.png",
+        "./dice/cube3/side6.png",
       ],
 
       diceFour: [
-        "http://www.fromgaming.com/images/dice/cube4/side1.png",
-        "http://www.fromgaming.com/images/dice/cube4/side2.png",
-        "http://www.fromgaming.com/images/dice/cube4/side3.png",
-        "http://www.fromgaming.com/images/dice/cube4/side4.png",
-        "http://www.fromgaming.com/images/dice/cube4/side5.png",
-        "http://www.fromgaming.com/images/dice/cube4/side6.png",
+        "./dice/cube4/side1.png",
+        "./dice/cube4/side2.png",
+        "./dice/cube4/side3.png",
+        "./dice/cube4/side4.png",
+        "./dice/cube4/side5.png",
+        "./dice/cube4/side6.png",
       ],
 
       diceFive: [
-        "http://www.fromgaming.com/images/dice/cube5/side1.png",
-        "http://www.fromgaming.com/images/dice/cube5/side2.png",
-        "http://www.fromgaming.com/images/dice/cube5/side3.png",
-        "http://www.fromgaming.com/images/dice/cube5/side4.png",
-        "http://www.fromgaming.com/images/dice/cube5/side5.png",
-        "http://www.fromgaming.com/images/dice/cube5/side6.png",
+        "./dice/cube5/side1.png",
+        "./dice/cube5/side2.png",
+        "./dice/cube5/side3.png",
+        "./dice/cube5/side4.png",
+        "./dice/cube5/side5.png",
+        "./dice/cube5/side6.png",
       ],
 
       diceSix: [
-        "http://www.fromgaming.com/images/dice/cube6/side1.png",
-        "http://www.fromgaming.com/images/dice/cube6/side2.png",
-        "http://www.fromgaming.com/images/dice/cube6/side3.png",
-        "http://www.fromgaming.com/images/dice/cube6/side4.png",
-        "http://www.fromgaming.com/images/dice/cube6/side5.png",
-        "http://www.fromgaming.com/images/dice/cube6/side6.png",
+        "./dice/cube6/side1.png",
+        "./dice/cube6/side2.png",
+        "./dice/cube6/side3.png",
+        "./dice/cube6/side4.png",
+        "./dice/cube6/side5.png",
+        "./dice/cube6/side6.png",
       ],
 
       diceSeven: [
-        "http://www.fromgaming.com/images/dice/cube7/side1.png",
-        "http://www.fromgaming.com/images/dice/cube7/side2.png",
-        "http://www.fromgaming.com/images/dice/cube7/side3.png",
-        "http://www.fromgaming.com/images/dice/cube7/side4.png",
-        "http://www.fromgaming.com/images/dice/cube7/side5.png",
-        "http://www.fromgaming.com/images/dice/cube7/side6.png",
+        "./dice/cube7/side1.png",
+        "./dice/cube7/side2.png",
+        "./dice/cube7/side3.png",
+        "./dice/cube7/side4.png",
+        "./dice/cube7/side5.png",
+        "./dice/cube7/side6.png",
       ],
 
       diceEight: [
-        "http://www.fromgaming.com/images/dice/cube8/side1.png",
-        "http://www.fromgaming.com/images/dice/cube8/side2.png",
-        "http://www.fromgaming.com/images/dice/cube8/side3.png",
-        "http://www.fromgaming.com/images/dice/cube8/side4.png",
-        "http://www.fromgaming.com/images/dice/cube8/side5.png",
-        "http://www.fromgaming.com/images/dice/cube8/side6.png",
+        "./dice/cube8/side1.png",
+        "./dice/cube8/side2.png",
+        "./dice/cube8/side3.png",
+        "./dice/cube8/side4.png",
+        "./dice/cube8/side5.png",
+        "./dice/cube8/side6.png",
       ],
 
       diceNine: [
-        "http://www.fromgaming.com/images/dice/cube9/side1.png",
-        "http://www.fromgaming.com/images/dice/cube9/side2.png",
-        "http://www.fromgaming.com/images/dice/cube9/side3.png",
-        "http://www.fromgaming.com/images/dice/cube9/side4.png",
-        "http://www.fromgaming.com/images/dice/cube9/side5.png",
-        "http://www.fromgaming.com/images/dice/cube9/side6.png",
+        "./dice/cube9/side1.png",
+        "./dice/cube9/side2.png",
+        "./dice/cube9/side3.png",
+        "./dice/cube9/side4.png",
+        "./dice/cube9/side5.png",
+        "./dice/cube9/side6.png",
       ],
 
       diceTen: [
-        "http://www.fromgaming.com/images/dice/cube10/side1.png",
-        "http://www.fromgaming.com/images/dice/cube10/side2.png",
-        "http://www.fromgaming.com/images/dice/cube10/side3.png",
-        "http://www.fromgaming.com/images/dice/cube10/side4.png",
-        "http://www.fromgaming.com/images/dice/cube10/side5.png",
-        "http://www.fromgaming.com/images/dice/cube10/side6.png",
+        "./dice/cube10/side1.png",
+        "./dice/cube10/side2.png",
+        "./dice/cube10/side3.png",
+        "./dice/cube10/side4.png",
+        "./dice/cube10/side5.png",
+        "./dice/cube10/side6.png",
       ],
 
       diceEleven: [
-        "http://www.fromgaming.com/images/dice/cube11/side1.png",
-        "http://www.fromgaming.com/images/dice/cube11/side2.png",
-        "http://www.fromgaming.com/images/dice/cube11/side3.png",
-        "http://www.fromgaming.com/images/dice/cube11/side4.png",
-        "http://www.fromgaming.com/images/dice/cube11/side5.png",
-        "http://www.fromgaming.com/images/dice/cube11/side6.png",
+        "./dice/cube11/side1.png",
+        "./dice/cube11/side2.png",
+        "./dice/cube11/side3.png",
+        "./dice/cube11/side4.png",
+        "./dice/cube11/side5.png",
+        "./dice/cube11/side6.png",
       ],
 
       diceTwelve: [
-        "http://www.fromgaming.com/images/dice/cube12/side1.png",
-        "http://www.fromgaming.com/images/dice/cube12/side2.png",
-        "http://www.fromgaming.com/images/dice/cube12/side3.png",
-        "http://www.fromgaming.com/images/dice/cube12/side4.png",
-        "http://www.fromgaming.com/images/dice/cube12/side5.png",
-        "http://www.fromgaming.com/images/dice/cube12/side6.png",
+        "./dice/cube12/side1.png",
+        "./dice/cube12/side2.png",
+        "./dice/cube12/side3.png",
+        "./dice/cube12/side4.png",
+        "./dice/cube12/side5.png",
+        "./dice/cube12/side6.png",
       ],
 
       diceThirteen: [
-        "http://www.fromgaming.com/images/dice/cube13/side1.png",
-        "http://www.fromgaming.com/images/dice/cube13/side2.png",
-        "http://www.fromgaming.com/images/dice/cube13/side3.png",
-        "http://www.fromgaming.com/images/dice/cube13/side4.png",
-        "http://www.fromgaming.com/images/dice/cube13/side5.png",
-        "http://www.fromgaming.com/images/dice/cube13/side6.png",
+        "./dice/cube13/side1.png",
+        "./dice/cube13/side2.png",
+        "./dice/cube13/side3.png",
+        "./dice/cube13/side4.png",
+        "./dice/cube13/side5.png",
+        "./dice/cube13/side6.png",
       ],
 
       diceFourteen: [
-        "http://www.fromgaming.com/images/dice/cube14/side1.png",
-        "http://www.fromgaming.com/images/dice/cube14/side2.png",
-        "http://www.fromgaming.com/images/dice/cube14/side3.png",
-        "http://www.fromgaming.com/images/dice/cube14/side4.png",
-        "http://www.fromgaming.com/images/dice/cube14/side5.png",
-        "http://www.fromgaming.com/images/dice/cube14/side6.png",
+        "./dice/cube14/side1.png",
+        "./dice/cube14/side2.png",
+        "./dice/cube14/side3.png",
+        "./dice/cube14/side4.png",
+        "./dice/cube14/side5.png",
+        "./dice/cube14/side6.png",
       ],
 
       diceFifteen: [
-        "http://www.fromgaming.com/images/dice/cube15/side1.png",
-        "http://www.fromgaming.com/images/dice/cube15/side2.png",
-        "http://www.fromgaming.com/images/dice/cube15/side3.png",
-        "http://www.fromgaming.com/images/dice/cube15/side4.png",
-        "http://www.fromgaming.com/images/dice/cube15/side5.png",
-        "http://www.fromgaming.com/images/dice/cube15/side6.png",
+        "./dice/cube15/side1.png",
+        "./dice/cube15/side2.png",
+        "./dice/cube15/side3.png",
+        "./dice/cube15/side4.png",
+        "./dice/cube15/side5.png",
+        "./dice/cube15/side6.png",
       ],
 
       diceSixteen: [
-        "http://www.fromgaming.com/images/dice/cube16/side1.png",
-        "http://www.fromgaming.com/images/dice/cube16/side2.png",
-        "http://www.fromgaming.com/images/dice/cube16/side3.png",
-        "http://www.fromgaming.com/images/dice/cube16/side4.png",
-        "http://www.fromgaming.com/images/dice/cube16/side5.png",
-        "http://www.fromgaming.com/images/dice/cube16/side6.png",
+        "./dice/cube16/side1.png",
+        "./dice/cube16/side2.png",
+        "./dice/cube16/side3.png",
+        "./dice/cube16/side4.png",
+        "./dice/cube16/side5.png",
+        "./dice/cube16/side6.png",
       ],
 
       diceSeventeen: [
-        "http://www.fromgaming.com/images/dice/cube17/side1.png",
-        "http://www.fromgaming.com/images/dice/cube17/side2.png",
-        "http://www.fromgaming.com/images/dice/cube17/side3.png",
-        "http://www.fromgaming.com/images/dice/cube17/side4.png",
-        "http://www.fromgaming.com/images/dice/cube17/side5.png",
-        "http://www.fromgaming.com/images/dice/cube17/side6.png",
+        "./dice/cube17/side1.png",
+        "./dice/cube17/side2.png",
+        "./dice/cube17/side3.png",
+        "./dice/cube17/side4.png",
+        "./dice/cube17/side5.png",
+        "./dice/cube17/side6.png",
       ],
 
       diceEighteen: [
-        "http://www.fromgaming.com/images/dice/cube18/side1.png",
-        "http://www.fromgaming.com/images/dice/cube18/side2.png",
-        "http://www.fromgaming.com/images/dice/cube18/side3.png",
-        "http://www.fromgaming.com/images/dice/cube18/side4.png",
-        "http://www.fromgaming.com/images/dice/cube18/side5.png",
-        "http://www.fromgaming.com/images/dice/cube18/side6.png",
+        "./dice/cube18/side1.png",
+        "./dice/cube18/side2.png",
+        "./dice/cube18/side3.png",
+        "./dice/cube18/side4.png",
+        "./dice/cube18/side5.png",
+        "./dice/cube18/side6.png",
       ],
       roll: [],
       imagesLoading: true,
@@ -275,13 +275,13 @@ export class Body extends Component {
   //search .image-container children for complete property
   //returns true when all img element children return true for .complete
   imagesLoaded(parentNode) {
-    let imgElements = parentNode.querySelectorAll("img");
+    // let imgElements = parentNode.querySelectorAll("img");
 
-    for (let img of imgElements) {
-      if (!img.complete) {
-        return false;
-      }
-    }
+    // for (let img of imgElements) {
+    //   if (!img.complete) {
+    //     return false;
+    //   }
+    // }
 
     return true;
   }
@@ -309,16 +309,16 @@ export class Body extends Component {
 
     return (
       <div>
-        <Preload images={allImages} handleLoad={this.handleLoadChange} />
+        {/* <Preload images={allImages} handleLoad={this.handleLoadChange} /> */}
 
-        {this.renderSpinner()}
+        {/* {this.renderSpinner()} */}
 
-        {!this.state.imagesLoading && (
-          <div>
-            <Roll onClick={this.chooseDice} />
-            <RollResult rolls={this.state.roll} />
-          </div>
-        )}
+        {/* {!this.state.imagesLoading && ( */}
+        <div>
+          <Roll onClick={this.chooseDice} />
+          <RollResult rolls={this.state.roll} />
+        </div>
+        {/* )} */}
       </div>
     );
   }
